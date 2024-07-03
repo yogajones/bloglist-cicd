@@ -1,6 +1,6 @@
 # BlogList App
 
-Deployed with Render: https://bloglist-zniw.onrender.com/blogs
+Deployed with Render: 
  
 The BlogList App allows logged-in users to save, view and comment on blogs they find interesting.
 
@@ -32,7 +32,7 @@ For the SECRET, any random string will do.
 
 4. In the project root, run
 
-`npm run build:ui`
+`npm run build`
 
 ## Usage
 

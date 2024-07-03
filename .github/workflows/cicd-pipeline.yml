@@ -16,18 +16,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install dependencies 
-        run: npm install
+      - name: Install backend dependencies 
+        run: npm ci
+
+      - name: Install frontend dependencies 
+        working-directory: ./frontend
+        run: npm ci
 
       - name: Check style
-        run: npm run eslint
+        run: npm run lint
 
       - name: Build
-        working-directory: ./backend
-        run: npm run build:ui
+        run: npm run build
 
       - name: Run Node tests
-        working-directory: ./backend
         run: npm test
       
       - name: Trigger deployment
