@@ -6,4 +6,4 @@ cd frontend
 npm ci
 cd ..
 npm run build
-echo "..build finished!"
+echo "..build finished!" 
