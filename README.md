@@ -1,6 +1,6 @@
 # BlogList App
 
-Deployed with Render: 
+Deployed with Render: https://bloglist-cicd-ymk9.onrender.com
  
 The BlogList App allows logged-in users to save, view and comment on blogs they find interesting.
 
@@ -19,12 +19,16 @@ The app was created as a series of exercises in the Full Stack Open MOOC course.
 
 `npm install`
 
+3. In the /frontend directory, run
+
+`npm install`
+
 3. Create a .env file inside the backend directory and add the following environment variables:
 
-MONGODB_URI=<your production database address>
-TEST_MONGODB_URI=<your test database address>
-SECRET=<your secret>
-PORT=3003
+- MONGODB_URI
+- TEST_MONGODB_URI
+- SECRET
+- PORT=3003
 
 For the URIs, follow the instructions [here](https://fullstackopen.com/en/part3/saving_data_to_mongo_db#mongo-db).
 
@@ -43,12 +47,6 @@ For the SECRET, any random string will do.
 2. With your favourite browser, navigate to
 
 `localhost:3003`
-
-## Deployment
-
-The repository contains a Dockerfile for a swift deployment.
-
-Currently, the BlogList App is deployed to Render at https://bloglist-zniw.onrender.com
 
 ## Technologies Used
 
